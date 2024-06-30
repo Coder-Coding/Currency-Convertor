@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--this is a link in which we are using many freeley awavilabe icon like we used in the form <i></i>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <h1>Currency Converter</h1> flex does not work on h1 tag sololey -->
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="amount">
+                <p>Enter amount</p>
+                <input value="100" type="text">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png"><!--this is api we use to get flag image just by changing country code (IN -> BE)etc.-->
+                        <select name="from">
+                            <!-- <option value="USD">USD</option> -->
+                            <!-- <option value="INR">INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option> -->
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png"><!--this is api we use to get flag image just by changing country code (IN -> BE)etc.-->
+                        <select name="to">
+                            <!-- <option value="USD">INR</option> -->
+                            <!-- <option value="INR" selected>INR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="AUD">AUD</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">
+                <p class="msggg">1USD = 80INR</p>
+                <button class="btn">Get exchange rate</button><!--the button inside the code act as a sumit button by default at page relodes after we press it-->
+            </div>
+        </form>
+    </div>
+    <script src="code_and_country_currency.js"></script>
+    <script src="logic.js"></script>
+</body>
+</html>
